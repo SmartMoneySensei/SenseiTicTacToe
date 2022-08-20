@@ -17,6 +17,8 @@ function check() {
     var result = document.getElementById("resultText")
     var reset = document.getElementById("reset-btn")
 
+    // credited to youtube tutorials on functions & visibility
+    
     if (btn1 === "x" && btn2 === "x" && btn3 === "x") {
         disable()
         result.innerHTML = "Player 1 won !"

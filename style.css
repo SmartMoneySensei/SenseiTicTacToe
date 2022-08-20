@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(https://play-lh.googleusercontent.com/zPxLgj5nvl20ahJV7aFC6S5mD8kii5CEEDj25j1P9CYAfXL9sdDuO-8eES0r4DhJHrU);
+    background-size: 100vh;
+}
+
+#Dojo {
+    margin-top: 2%;
+}
+
+#Dojo:hover {
+    opacity: .8;
+}
+
+h1, h2 {
+    color: rgb(4, 1, 1);
+    text-align: center;
+    margin-top: 20px;
+    background: aqua;
+    border-radius: 100%;
+}
+
+#chance {
+    margin-top: 3%;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+#row-1, #row-2, #row-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    color: rgb(2, 14, 17);
+    font-size: 75px;
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#resultText, #reset-btn {
+    visibility: hidden;
+}
+
+#reset-btn {
+    width: 100px;
+    height: 50px;
+    border-width: 0;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+#reset-btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
