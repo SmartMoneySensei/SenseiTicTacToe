@@ -18,7 +18,9 @@ function check() {
     var reset = document.getElementById("reset-btn")
 
     // credited to youtube tutorials on functions & visibility
+    // Create buttons to be visible "onclick"
     
+    // Player 1 Won 
     if (btn1 === "x" && btn2 === "x" && btn3 === "x") {
         disable()
         result.innerHTML = "Player 1 won !"
@@ -74,6 +76,8 @@ function check() {
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
     }
+
+    // Player 2 Won 
 
     else if (btn1 === "o" && btn2 === "o" && btn3 === "o") {
         disable()
@@ -131,6 +135,8 @@ function check() {
         reset.style.visibility = "visible"
     }
 
+    // If sensei's game ends in a tie !
+
     else if (disabledBtn === 9) {
         disable()
         result.innerHTML = "Match Draw !"
@@ -140,6 +146,7 @@ function check() {
 
 }
 
+// Disable click per player so each player gets a turn to click back and forth.
 function disableBtn(id) {
     if (chance === "Player 1") {
         document.getElementById(id).disabled = true
@@ -161,6 +168,7 @@ function disableBtn(id) {
     }
 }
 
+// Hide reset button so it only shows after the game is over.
 function disable() {
     for (var i = 1; i < 10; i++) {
         var id = "btn" + i
@@ -169,6 +177,8 @@ function disable() {
     document.getElementById("reset-btn").style.visibility = "visible"
     document.getElementById("resultText").style.visibility = "visible"
 }
+
+// reset the game if players want to play sensei's game again !
 
 function reset() {
     for (var i = 1; i < 10; i++) {
